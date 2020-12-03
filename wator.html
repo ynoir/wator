@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Wa-Tor</title>
+        <link rel="stylesheet" href="wator.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">    </head>
+    <body>
+        <div class="center">
+
+            <h2 class="space-top">Wa-Tor imlementation by Soki</h2>
+
+            <canvas id="wator" class="wator" width="600" height="600"></canvas>
+
+            <form class = "form-inline">
+                <div class = "form-group">
+
+                    <div class="input-group-prepend">
+                        <label class="input-group-text" for="cell_size">Cell size</label>
+                    </div>
+                    <select id="cell_size" class="form-control">
+                        <option value="2">2px</option>
+                        <option value="4" selected>4px</option>
+                        <option value="8">8px</option>
+                    </select>    
+
+                </div>
+                <div class = "form-group space-left">
+
+                    <div class="input-group-prepend">
+                        <label class="input-group-text" for="tick_delay">Tick delay</label>
+                    </div>
+                    <select id="tick_delay" class="form-control">
+                        <option value="50">50ms</option>
+                        <option value="100" selected>100ms</option>
+                        <option value="200">200ms</option>
+                        <option value="400">400ms</option>
+                    </select>    
+
+                    <button type="button" class="btn btn-primary space-left" id="restart">Restart</button>    
+                </div>
+
+            </form>
+
+            <p class="space-top">See <a href="https://en.wikipedia.org/wiki/Wa-Tor">Wikipedia</a> for details.</p>
+        </div>
+
+          <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+        <script src="wator.js"></script>
+    </body>
+</html>
